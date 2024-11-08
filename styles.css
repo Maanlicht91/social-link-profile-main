@@ -30,9 +30,9 @@ body {
   align-items: center;
   background-color: var(--grey800);
   width: 24rem;
-  height: 38.188rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
+  padding: 2.5rem;
 }
 
 .person {
@@ -71,6 +71,8 @@ body {
       padding: 1rem;
       width: 19rem;
       height: 2.813rem;
+      font-weight: 900;
+      font-family: inherit;
 
       &:hover {
         background-color: var(--light-green);
