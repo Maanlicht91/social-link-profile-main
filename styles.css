@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --light-green: hsl(75, 94%, 57%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: var(--grey900);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey800);
+  width: 24rem;
+  height: 38.188rem;
+  border-radius: 12px;
+}
+
+.person {
+  .person__pic {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 88px;
+      border-radius: 50%;
+    }
+  }
+
+  .person__info {
+    text-align: center;
+    .person__name {
+      font-size: 24px;
+    }
+    .person__location {
+      margin: 0.25rem 0 1.5rem 0;
+      color: var(--light-green);
+    }
+  }
+
+  .person__contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .person__contacts {
+      cursor: pointer;
+      background-color: var(--grey700);
+      border: 0;
+      color: #fff;
+      align-self: stretch;
+      border-radius: 8px;
+      padding: 1rem;
+
+      &:hover {
+        background-color: var(--light-green);
+        color: var(--grey900);
+      }
+    }
+
+    .person__contacts:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .person__occupation {
+    font-weight: 400;
+  }
+}
+
+.person > * {
+  margin-top: 1.5rem;
+}
+
+.attribution {
+  margin-top: 2rem;
+  color: var(--light-green);
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
