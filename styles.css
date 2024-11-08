@@ -31,7 +31,6 @@ body {
   background-color: var(--grey800);
   width: 24rem;
   border-radius: 12px;
-  margin-bottom: 1.5rem;
   padding: 2.5rem;
 }
 
@@ -96,6 +95,7 @@ body {
 }
 
 .attribution {
+  margin-top: 1.5rem;
   color: var(--light-green);
   a {
     color: white;
